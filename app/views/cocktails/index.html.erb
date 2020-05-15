@@ -1,0 +1,17 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://blog.ubaldi.com/wp-content/uploads/2019/05/cocktails-blender-1240x503.jpg);">
+  <div class="container">
+    <h1>Your cocktails</h1>
+    <p>How to get the perfect party started</p>
+  </div>
+</div>
+
+<%= link_to "Add a cocktail", new_cocktail_path, class:"btn btn-cocktail" %>
+
+<div class="cards">
+    <% @cocktails.each do |cocktail| %>
+      <div class="card_cocktail" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/1-empty-cocktail-glass-on-red-background-oleg-yermolov.jpg)">
+        <%= link_to cocktail.name, cocktail_path(cocktail) %>
+      </div>
+    <% end %>
+</div>
+
