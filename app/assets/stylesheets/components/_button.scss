@@ -1,21 +1,20 @@
-.btn-cocktail {
- display:inline-block;
- padding:10px 1.6em;
- border:0.1em solid #000000;
- margin:0 0.2em 0.2em 0;
- border-radius:0.12em;
- box-sizing: border-box;
- text-decoration:none;
- font-weight:300;
- color:#000000;
- text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
- background-color: blue;
- text-align:center;
- transition: all 0.15s;
+.btn-gradient {
+    display: inline-block;
+    justify-content: center;
+    color: white;
+    padding: 8px 24px;
+    margin: 10px;
+    width: 25%;
+    /* border-radius: 10px; */
+    /* font-weight: bold; */
+    background: linear-gradient(#851412, #B23029);
+    transition: background 0.3s ease;
+    border: 1px solid black;
 }
 
-.btn-cocktail:hover {
- text-shadow: 0 0 2em rgba(255,255,255,1);
- color:#FFFFFF;
- border-color:red;
+.btn-gradient:hover {
+    background: black;
+    color: white;
+    border-color: white;
+
 }

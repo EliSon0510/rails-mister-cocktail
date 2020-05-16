@@ -4,8 +4,9 @@
     <p>How to get the perfect party started</p>
   </div>
 </div>
-
-<%= link_to "Add a cocktail", new_cocktail_path, class:"btn btn-cocktail" %>
+<div class="container">
+  <%= link_to "Add a cocktail", new_cocktail_path, class: "btn btn-gradient"%>
+</div>
 
 <div class="cards">
     <% @cocktails.each do |cocktail| %>
